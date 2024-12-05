@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <style>
+    *{
+      padding: 0%;
+      margin: 0%;
+    }
+    body{
+      width: 100%;
+      margin: 0%;
+      padding: 0%;
+    }
+    .a1{
+      margin-left: 15rem;
+     justify-content: space-between;
+    }
+    .largeimage{
+      height: 50rem;
+      /* margin-top: -1.3rem; */
+      
+      /* border: 2px solid red; */
+      background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/mxB7vDzMbOSyJBxo/lovepik_com-500452313-banner-background-of-science-and-technology-m7VKr10KjlTl862b.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .smallbox{
+      height: 16rem;
+      width: 50rem;
+      margin-left: 20rem;
+      margin-top: 0rem;
+      /* border: 2px solid black; */
+    } 
+    
+    .smallcontent{
+      text-align: center;
+      font-size: 3em;
+      color: white ;
+    }
+    .smallcontent2{
+      color: white;
+      text-align: center;
+    }
+    button:hover{
+      background-color: rgb(15, 100, 15);
+      color: white;
+    }
+    .column {
+  float: left;
+  width: 31%;
+  margin-left:1%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: white;
+}
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+.card-list .card-item {
+  height: auto;
+  color: #000000;
+  user-select: none;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  background: rgba(235, 231, 231, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.card-list .card-item .user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  border: 3px solid #000000;
+  padding: 4px;
+}
+.card-list .card-item .user-profession {
+  font-size: 1.15rem;
+  color: #000000;
+  font-weight: 500;
+  margin: 14px 0 40px;
+}
+.card-list .card-item .message-button {
+  font-size: 1.25rem;
+  padding: 5px 35px;
+  color: #1b1b1b;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #000000;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+.card-list .card-item .message-button:hover {
+  background: rgb(0, 0, 0);
+  border: 1px solid #fff;
+  color: #2cd40a;
+}
+.slider-wrapper .swiper-pagination-bullet {
+  background: #fff;
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+}
+.slider-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.slider-wrapper .swiper-slide-button {
+  color: #fff;
+  margin-top: -55px;
+  transition: 0.2s ease;
+}
+.slider-wrapper .swiper-slide-button:hover {
+  color: #4658ff;
+}
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+.massage{
+  text-decoration:none;
+  color: black;
+}
+.massage:hover{
+  color: rgb(19, 232, 19);
+
+}
+/* footer section start */
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body{
+	font-size:14px;
+	background: #fff;
+    max-width:1920px;
+    margin:0 auto;
+	overflow-x:hidden;
+	font-family: poppins;
+	
+
+}
+#footer{
+	background: #f7f7f7;
+    padding: 3rem;
+	/* padding-top: 5rem; */
+	padding-top: 7rem;
+    padding-bottom: 80px;
+	background-color: rgb(20,69, 127);
+}
+#footer2{
+	background: #f7f7f7;
+    padding: 3rem;
+    margin-top: 0px;
+	/* padding-top: 5rem; */
+	padding-top: 7rem;
+    padding-bottom: 80px;
+	background-image: url(../images/cards/v748-toon-111.png);
+}
+.social-links h2{
+	padding-bottom: 15px;
+	font-size: 20px;
+    font-weight: 600;
+}
+.social-links img{
+	padding-bottom: 25px;
+}
+.social-icons{
+	/* display: flex;
+    gap: 3rem; */
+	display: flex;
+    flex-direction: column;
+    gap: 1rem;
+	color: #777777;
+}
+.social-icons a{
+	/* font-size: 18px; */
+    /* background: #ffffff; */
+    /* box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border-radius: 3px;
+	color: #82074a; */
+	/* margin-right: 18px; */
+	color: #777777;
+}
+.social-icons a:hover{
+	color: #000000;
+}
+.social-icons a i{
+	box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border-radius: 3px;
+    color: #82074a;
+	font-size: 16px;
+	margin-right: 12px;
+}
+li{
+	list-style: none;
+  color: orange;
+}
+.useful-link h2{
+	padding-bottom: 15px;
+	font-size: 20px;
+    font-weight: 600;
+}
+.useful-link img{
+	padding-bottom: 15px;
+}
+.use-links{
+	line-height: 32px;
+}
+.use-links li i{
+	font-size: 14px;
+    padding-right: 8px;
+    color: #898989;
+}
+.use-links li a{
+	color: #303030;
+    font-size: 15px;
+    font-weight: 500;
+	color: #777777;
+}
+.use-links li a:hover{
+	color: #000;
+}
+.address h2{
+	padding-bottom: 15px;
+	font-size: 20px;
+    font-weight: 600;
+}
+.address img{
+	padding-bottom: 15px;
+}
+.address-links li a{
+	color: #303030;
+    font-size: 15px;
+    font-weight: 500;
+	color: #777777;
+
+}
+.address-links li i{
+	font-size: 16px;
+    padding-right: 8px;
+	color: #82074a;
+
+}
+.address-links li i:nth-child(1){
+	padding-top: 9px;
+}
+.address-links .address1{
+	font-weight: 500;
+    font-size: 15px;
+	display: flex;
+}
+.address-links{
+	    line-height: 32px;
+		color: #777777;
+}
+.copy-right-sec{
+	padding: 1.8rem;
+    background:rgb(20, 69, 127);
+    color: #fff;
+    text-align: center;
+}
+.copy-right-sec a{
+	color: #ef0e0e;
+    font-weight: 500;
+}
+a{
+  text-decoration:none;
+}
+
+/* footer section end */
+  </style>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Example Code -->
+    
+        
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0%; margin: 0%;">
+      <div class="container-fluid" style="background-color:white; padding: 0%; margin: 0%     ;">
+        <a class="navbar-brand" href="#"><img src="./image/logo.avif" alt="" height="100rem" width="80rem"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 a1">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Courses & Services</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Reviwes</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Contect us</a>
+  </li>
+  
+          </ul>
+            <button class="btn btn-outline-success" type="submit" fdprocessedid="wlmct" style="border-radius: 20rem;">Call us</button>
+        </div>
+      </div>
+    </nav>
+    
+      
+    <!-- End Example Code -->
+     <div class="largeimage">
+     
+          <p class="smallcontent"><b><br><br>Learn Complete Industrial <br>Automation and Advance Design <br>from Maverick</b></p>
+          <p class="smallcontent2">Empowering Engineers with Certification and Job Placement</p>
+          <button type="button" style="height: 5vh; width: 8vh; border-radius: 10px; margin-left: 43dvw;color: white; background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/mxB7vDzMbOSyJBxo/lovepik_com-500452313-banner-background-of-science-and-technology-m7VKr10KjlTl862b.jpg);">submit</button>      
+            <div class="smallestbox" style="background-color: rgb(13, 36, 76);">
+          <div class="row" style="margin-left: 1em; margin-top: 5vh;">
+            <div class="column" style="background-color: rgb(18, 63, 114);">
+              <h2  class="jod" style="color: white; text-align: center; margin-top: 2em; ">PLC Training</h2>
+              <p class="jod" style="text-align: center; color: white; font-size: 1.5sem; margin-top: 2em;">Comprehensive courses with 100% <br>job guarantee.</p>
+            </div>
+            <div class="column" style="background-color: rgb(18, 63, 114); box-shadow: 0,6px,8px rgba(0, 0, 0,0.14);">
+              <h2 class="jod" style="color: white; text-align: center; margin-top: 2em; ">100% Job Guarantee</h2>
+              <p class="jod" style="text-align: center; color: white; font-size: 1.5sem; margin-top: 2em;">Ensuring our trainees secure <br>positions in top industrial companies</p>
+            </div>
+            <div class="column" style="background-color: rgb(18, 63, 114)">
+              <h2  class="jod" style="color: white; text-align: center; margin-top: 2em; ">Robotics Training</h2>
+              <p class="jod" style="text-align: center; color: white; font-size: 1.5sem; margin-top: 2em;">Hands-on experience in Automation <br>Engineering.</p>
+            </div>
+          </div>
+          </div>
+          
+          
+     </div>
+    </div>
+     <div class="leadingbox" style="height: 80vh; width: 100%; display: flex;">
+      <div class="leadingbox1" style="height: 30em; width: 40%; text-align: center;  margin-left: 4em; margin-top: 12em;">
+      <p class="largeleading" style="margin-top: 2em; font-size: 1.8em; font-weight:bold; "><b>Leading Industrial <br>Automation Training</b></p>
+      <p class="smallleading" >Maverick Software Technologies offers top-notch <br>industrial automation training with certification, <br>ensuring job placement for engineers in various <br>specialized fields.</p>
+    </div>
+    <div class="leadingimg" style="height: 30em; width: 30%;  margin-top: 12em; margin-left: 4em; background-image: url(./image/leading.avif);background-position: center; background-repeat: no-repeat; background-size: cover;  box-shadow: 0,4px,8px,0 rgba(0, 0,0, 0.9);">
+        
+    </div>
+     </div>
+
+     <div class="leadingbox" style="height: 80vh; width: 100%; display: flex;">
+      <div class="leadingbox2" style="height: 30em; width: 30%; text-align: center;  margin-left: 4em; margin-top: 
+12em; background-image: url(./image/leading2.avif);background-position: center; background-repeat: no-repeat; background-size: cover; ">
+    </div>
+    <div class="leadingimg" style="height: 30em; width: 40%;  margin-top: 12em; margin-left: 4em; ">
+             <p class="largeleading" style="margin-top: 1em; font-size: 1.8em; font-weight:bold; "><b>About Us</b></p>
+                    <p class="smallleading" >Maverick Software Technologies Pvt Ltd has <br>established itself as a premier industrial <br>automation training institute in India. We are <br>dedicated to bridging the gap between <br>theoretical knowledge and practical application <br>by offering specialized courses in Mechatronics, <br>Robotics, PLC Training, and Engineering Design. <br>With years of experience, we have trained <br>thousands of engineers and placed them in <br>reputable organizations. Our expert trainers <br>ensure that you gain industry-relevant skills and <br>certifications. Whether you're a student or a <br>professional, our courses are designed to meet <br>the growing demands of the automation industry, <br>ensuring your career advancement.</p>
+              
+              
+    </div>
+     </div>
+
+     <div class="video" style="height: 90vh; margin-top: 10vh;">
+        
+          <iframe width="100%" height="600vh" src="https://www.youtube.com/embed/ypfQ7TxtIPI?si=hvbv9lrJQjwzoqbh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+     </div>
+
+     <div class="carousel">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./image/carousel.avif" class="d-block w-100" alt="..." height="500vh">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/carousel2.avif" class="d-block w-100" alt="..." height="500vh">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/carousel3.avif" class="d-block w-100" alt="..." height="500vh">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+     </div>
+     <div class="industrial" style="height: 25vh; width: 100%;">
+          <p class="industrialcontant" style="font-size: 2em; font-weight: bold;  text-align: center; margin-top: 2em;">Industrial <b class="bold" style="color: rgb(39, 39, 113);">Automation Training</b></p>
+            <p class="industrialsmall" style="text-align: center;">At Maverick Software Technologies Pvt Ltd, we offer a range of specialized <br>industrial automation training services.</p>
+        </div>
+          
+        <div class="twoimagebox" style="display: flex;">
+            <div class="imagebox" style="margin-left: 2%;" >
+                <img src="./image/1stimg.avif" alt="" height="100%" width="100%">
+                <p class="courses" style="font-weight: bold; font-size: 200%;">Courses</p>
+                <p class="courses2">Our wide range of courses includes Mechatronics, Civil Designing <br>(AutoCAD), and Mechanical Designing (CATIA, PROE). These courses <br>are designed to provide hands-on training, ensuring our students <br>are well-prepared for industry challenges and job opportunities.</p>
+            </div>
+            <div class="imagebox2" style="margin-left: 2%;">
+                  <img src="./image/2nsimg.avif" alt="" height="100%" width="100%">
+                  <p class="coursesservices" style="font-weight: bold; font-size: 200%;">Services</p>
+                  <p class="coursesservices2">At Maverick Software Technologies Pvt Ltd, we provide specialized <br>services in industrial automation, covering PLC training, SCADA <br>systems, robotics integration, HMI, VFD, instrumentation, and control <br>panel designing. Our services equip you with practical, industry- <br>ready skills essential for thriving in automation and engineering <br>fields.</p>
+            </div>
+        </div>
+      <div>
+          <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+      </div>
+      
+        
+        <div class="trainingcenter" style="height: 100px; text-align: center;">
+            <p class="training1" style="font-size: 200%;">Gurgaon's Best <b>Training Centre</b></p>
+        </div>
+                 <!-- card slider -->
+  <div class="main">
+    <div class="container swiper">
+      <div class="slider-wrapper">
+        <div class="card-list swiper-wrapper">
+          <div class="card-item swiper-slide">
+            <img src="./image/1.avif" alt="User Image" class="user-image">
+            <h2 class="user-name">PCL</h2>
+           
+           
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./image/2.avif" alt="User Image" class="user-image">
+            <h2 class="user-name">SCADA</h2>
+            
+            
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./image/3.avif" alt="User Image" class="user-image">
+            <h2 class="user-name">HMI</h2>
+           
+           
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./image/4.avif" alt="User Image" class="user-image">
+            <h2 class="user-name">DRIVE</h2>
+            
+            
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./image/5.avif" alt="User Image" class="user-image">
+            <h2 class="user-name">SERVO</h2>
+            
+            
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./image/6.avif" alt="User Image" class="user-image">
+            <h2 class="user-name">DCS</h2>
+            
+            
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./image/7.avif" alt="User Image" class="user-image">
+            <h2 class="user-name">ELECTRICAL WIRING</h2>
+            
+            
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./image/8.avif" alt="User Image" class="user-image">
+            <h2 class="user-name">REVIT</h2>
+            
+            
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./image/9.avif" alt="User Image" class="user-image">
+            <h2 class="user-name">CATIA</h2>
+            
+            
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./image/10.avif" alt="User Image" class="user-image">
+            <h2 class="user-name">SOLID WORKS</h2>
+            
+            
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./image/11.avif" alt="User Image" class="user-image">
+            <h2 class="user-name">AUTOCAD</h2>
+            
+            
+          </div>
+          <div class="card-item swiper-slide">
+            <img src="./image/12.avif" alt="User Image" class="user-image">
+            <h2 class="user-name">PRO-E</h2>
+            
+            
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+            </div>
+             	<!-- footer section start -->
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<a href="index.html"><img src="./image/logo.avif"   style="background-color: white; border-radius: 50%; "class="img-fluid logo-footer"></a>
+                     <div class="footer-about">
+                         <p style="color: white;">Learn Complete Industrial Automation <br>and Advance Design from Maverick  </p>
+                     </div>
+					</div>
+					<div class="col-md-3">
+						<div class="useful-link">
+							<h2 style="color: orange;">Useful Links</h2>
+							<img src="./assets/images/about/home_line.png" alt="" class="img-fluid">
+							<div class="use-links">
+								<li><a href="index.html" style="color: orange;"><i class="fa-solid fa-angles-right"></i> Home</a></li>
+								<li><a href="about.html" style="color: orange"><i class="fa-solid fa-angles-right"></i> About Us</a></li>
+								<li><a href="gallery.html" style="color: orange"><i class="fa-solid fa-angles-right"></i> Gallery</a></li>
+								<li><a href="contact.html" style="color: orange"><i class="fa-solid fa-angles-right"></i> Contact</a></li>
+							</div>
+						</div>
+					</div>
+                   <div class="col-md-3">
+                       <div class="social-links">
+							<h2 style="color: orange;">Follow Us</h2>
+							<img src="./assets/images/about/home_line.png" alt="">
+							<div class="social-icons">
+								<li><a href="" style="color: orange;"><i class='bx bxl-facebook' style='color:#eb9b10'  ></i></i> Facebook</a></li>
+								<li><a href="" style="color: orange;"><i class='bx bxl-instagram' style='color:#eb9b10' ></i></i> Instagram</a></li>
+								<li><a href="" style="color: orange;"><i class='bx bxl-linkedin' style='color:#eb9b10' ></i></i> Linkedin</a></li>
+							</div>
+						</div>
+                   
+                   </div>
+					<div class="col-md-3">
+						<div class="address">
+							<h2 style="color: orange;">Address</h2>
+							<img src="./assets/images/about/home_line.png" alt="" class="img-fluid">
+							<div class="address-links">
+								<li class="address1"><i class="fa-solid fa-location-dot"></i> Aryan kumar
+									
+								    </li>
+								   <li><a href="" style="color: orange;"><i class="fa-solid fa-phone"></i> +91 90904500112</a></li>
+								   <li><a href="" style="color: orange;"><i class="fa-solid fa-envelope"></i> mail@1234567.com</a></li>
+							</div>
+						</div>
+					</div>
+          </div>
+          </div>
+        </div>
+      </div>
+                 
+      </div>
+			</div>
+      <div>
+		</footer>
+		<!-- footer section end -->
+		<!-- footer copy right section start -->
+		<section id="copy-right">
+			<div class="copy-right-sec"><i class="fa-solid fa-copyright"></i>  
+				This Website is owned and managed by | <a href="#" style="color: orange;"><b>Maverick Software Technologies (P) Ltd</b></a> 
+			</div>
+		</section>
+		<!-- footer copy right section end -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- Linking SwiperJS script -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- Linking custom script -->
+      <script src="script.js"></script>
+      <script> 
+      const swiper = new Swiper('.slider-wrapper', {
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 30,
+        // Pagination bullets
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          dynamicBullets: true
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        // Responsive breakpoints
+        breakpoints: {
+          0: {
+            slidesPerView: 1
+          },
+          768: {
+            slidesPerView: 2
+          },
+          1024: {
+            slidesPerView: 3
+          }
+        }
+      });</script>
+  </body>
+</html>
